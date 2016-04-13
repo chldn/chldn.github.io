@@ -53,6 +53,8 @@ body {
   color:#373737;
   background: #212121;
   font-size: 16px;
+  margin-left:20%;
+  padding:1px 5px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -267,7 +269,7 @@ Full-Width Styles
 .inner {
   position: relative;
   max-width: 640px;
-  padding: 20px 10px;
+  padding: 5px 5px;
   margin: 0 auto;
 }
 
@@ -366,6 +368,64 @@ Full-Width Styles
 
 #footer_wrap {
   background: #212121;
+}
+
+
+
+/*******************************************************************************
+Full Length
+*******************************************************************************/
+#sidebar {
+    list-style-type: none;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding: 0px;
+    width: 20%;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    
+    min-width: 150px;
+    max-width:20%;
+
+    background: #212121;
+    background: -moz-linear-gradient(top, #373737, #212121);
+    background: -webkit-linear-gradient(top, #373737, #212121);
+    background: -ms-linear-gradient(top, #373737, #212121);
+    background: -o-linear-gradient(top, #373737, #212121);
+    background: linear-gradient(top, #555555, #212121);
+}
+
+
+#sidebar_item{
+    display: block;
+    padding: 0px 0px 0px 20px;
+    text-decoration: none;
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: #111 0px 0px 10px;
+
+    transition: color 0.5s ease;
+    transition: text-shadow 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    -webkit-transition: text-shadow 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -moz-transition: text-shadow 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -o-transition: text-shadow 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    -ms-transition: text-shadow 0.5s ease;
+
+}
+
+/* Change the link color on hover */
+#sidebar_item:hover {
+    background-color: #555;
+    color: white;
 }
 
 
